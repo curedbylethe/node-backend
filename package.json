@@ -4,7 +4,7 @@
   "description": "A notion like web app. For educational purposes only.",
   "main": "index.ts",
   "scripts": {
-    "test": "jest"
+    "test": "ava"
   },
   "keywords": [
     "Node"
@@ -12,6 +12,6 @@
   "author": "parsajahanbani.ir",
   "license": "MIT",
   "devDependencies": {
-    "jest": "^29.6.2"
+    "ava": "^5.3.1"
   }
 }
