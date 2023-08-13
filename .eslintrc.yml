@@ -23,3 +23,5 @@ rules:
   semi:
     - error
     - never
+  no-duplicate-imports:
+    - error
