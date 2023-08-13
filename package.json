@@ -5,6 +5,8 @@
   "type": "module",
   "main": "index.ts",
   "scripts": {
+    "start": "npm run build && NODE_PATH=./build nodemon build/index.js",
+    "build": "tsc -p .",
     "test": "ava",
     "lint": "eslint . --ext .ts"
   },
