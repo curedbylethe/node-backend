@@ -5,3 +5,12 @@ Dockerfile
 .git
 .gitignore
 .npmrc
+
+#misc
+.DS_Store
+.vscode
+.env
+LICENSE
+README.md
+.dockerignore
+.github/
