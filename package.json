@@ -1,0 +1,14 @@
+{
+  "name": "notion-clone-backend",
+  "version": "1.0.0",
+  "description": "A notion like web app. For educational purposes only.",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node"
+  ],
+  "author": "parsajahanbani.ir",
+  "license": "MIT"
+}
