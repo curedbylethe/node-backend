@@ -2,6 +2,7 @@
   "name": "notion-clone-backend",
   "version": "1.0.0",
   "description": "A notion like web app. For educational purposes only.",
+  "type": "module",
   "main": "index.ts",
   "scripts": {
     "test": "ava"
