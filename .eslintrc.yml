@@ -25,3 +25,5 @@ rules:
     - never
   no-duplicate-imports:
     - error
+ignorePatterns:
+  - build/**/*
