@@ -21,6 +21,7 @@
     /* Type Checking */
     "strict": true /* Enable all strict type-checking options. */,
     "noImplicitAny": true /* Enable error reporting for expressions and declarations with an implied 'any' type. */,
+    "noImplicitOverride": true /* Ensure overriding members in derived classes are marked with an 'override' modifier. */,
 
     /* Completeness */
     "skipLibCheck": true /* Skip type checking all .d.ts files. */,
