@@ -39,7 +39,7 @@ COPY --chown=node:node --from=build $HOME $HOME
 USER node
 WORKDIR $HOME
 
-EXPOSE 8080
+EXPOSE 8000
 
 ENTRYPOINT ["dumb-init"]
 CMD ["node", "--enable-source-maps", "build/index.js"]

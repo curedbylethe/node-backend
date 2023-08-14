@@ -4,11 +4,15 @@ services:
   node-backend:
     build: .
     ports:
-      - "8000:8080"
+      - "8000:8000"
+    command: >
+      sh -c "node build/management/commands/wait_for_db.js && 
+             dumb-init node --enable-source-maps build/index.js"
     volumes:
       - .:/usr/src/app/
     environment:
       - NODE_ENV=development
+    restart: always
     depends_on:
       - postgres-db
   postgres-db:
@@ -17,9 +21,9 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     environment:
+      - POSTGRES_DB=mydb
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
-      - POSTGRES_DB=postgres
 
 volumes:
   postgres_data:
